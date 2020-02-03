@@ -1,0 +1,17 @@
+{
+  "name": "rabatt_beispiel_external_task",
+  "version": "0.0.1",
+  "description": "'",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@essential-projects/http": "^2.3.1",
+    "@process-engine/external_task_api_client": "^1.0.6",
+    "@process-engine/external_task_api_contracts": "^1.0.5",
+    "moment": "^2.24.0"
+  }
+}
