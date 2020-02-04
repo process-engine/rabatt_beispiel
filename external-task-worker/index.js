@@ -33,7 +33,7 @@ function validateEmail(email) {
 }
 
 const sendDiscountCode = (externalTask) => {
-  const result = 'Rabattcode erfolgreich versand.';
+  const result = 'Rabattcode erfolgreich versandt.';
 
   validateCartAmount(externalTask.payload.cartAmount);
   validateEmail(externalTask.payload.email);
