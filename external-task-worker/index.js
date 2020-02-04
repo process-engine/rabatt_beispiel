@@ -10,11 +10,35 @@ const identity = {
     token: 'ZHVtbXlfdG9rZW4=',
 };
 
-const sendDiscountCode = async (payload) => {
-  const result = 'Rabattcode erfolgreich versand.';
-    console.log(result);
+function validateCartAmount(cartAmount) {
+  console.log(cartAmount);
+  let cartAmountAsNumber = parseInt(cartAmount);
+  if(isNaN(cartAmountAsNumber)) {
+    throw new Error('Cart amount must be a number.');
+  }
 
-    return result;
+  if(cartAmountAsNumber < 0) {
+    throw new Error('Cart amount must not be a negative number.');
+  }
+
+  return true;
+}
+
+function validateEmail(email) {
+  if(!email.includes('@')) {
+    throw new Error('Email must contain an @.');
+  }
+
+  return true;
+}
+
+const sendDiscountCode = (externalTask) => {
+  const result = 'Rabattcode erfolgreich versand.';
+
+  validateCartAmount(externalTask.payload.cartAmount);
+  validateEmail(externalTask.payload.email);
+
+  return result;
 };
 
 const externalTaskWorker = new ExternalTaskWorker(processEngineUrl, identity, topic, maxTasks, longpollingTimeout, sendDiscountCode);
