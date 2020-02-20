@@ -9,7 +9,7 @@ Dieses Repo dient der Demonstration der ProcessEngine.
 
 Ein Projekt, das im E-Commerce-Bereich angesiedelt ist,nähert sich der Fertigstellung des ersten Meilensteins.
 
-Der zuständige Entwickler erhält folgende Nachrichten:
+Der zuständige Entwickler erhält folgende Nachrichten zu den verschiedenen E-Mails, die durch das System verschickt werden sollen:
 
 > Super! Wir müssen bei der Registrierung auch einen Aktivierungscode verschicken, mit dem User ihre E-Mail-Adresse aktivieren.
 
@@ -23,6 +23,7 @@ Der zuständige Entwickler erhält folgende Nachrichten:
 
 > Wo lag jetzt das Missverständnis?
 
+Das BPMN setzt diese Anforderungen um und demonstriert wie Fachabteilung und Technik "sich gemeinsam ein Bild machen".
 
 ## Wie kann ich das Projekt aufsetzen?
 
