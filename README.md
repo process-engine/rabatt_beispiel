@@ -52,7 +52,7 @@ $ npm install
 
 ### Benutzung
 
-Das BPMN-Diagramm muss in Studio geöffnet und auf die interne ProcessEngine deployt werden (genauer gesagt muss es auf eine ProcessEngine unter der Adresse http://localhost:56000 deployt werden).
+Das BPMN-Diagramm ["Aktivierungs-E-Mails-Prozess.bpmn"](Aktivierungs-E-Mails-Prozess.bpmn) muss in Studio geöffnet und auf die interne ProcessEngine deployt werden (genauer gesagt muss es auf eine ProcessEngine unter der Adresse http://localhost:56000 deployt werden).
 
 Die im Diagramm befindlichen Service-Tasks gehören entweder zum `external-task-worker` oder zum `http-rest-service`.
 
