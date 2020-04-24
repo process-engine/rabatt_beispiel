@@ -62,6 +62,7 @@
       <bpmn:outgoing>SequenceFlow_1tiy5gs</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:serviceTask id="Task_0rf7p74" name="Rabattcode über 10 EUR versenden" camunda:type="external" camunda:topic="RabattcodeVersenden">
+      <bpmn:documentation>"cartAmount" von 42 verursacht hier zu Demonstrationszwecken einen Fehler</bpmn:documentation>
       <bpmn:extensionElements>
         <camunda:properties>
           <camunda:property name="method" value="" />
