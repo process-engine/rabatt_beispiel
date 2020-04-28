@@ -21,6 +21,10 @@ function validateCartAmount(cartAmount) {
     throw new Error('Cart amount must not be a negative number.');
   }
 
+  if(cartAmountAsNumber === 42) {
+    throw new Error('Cart amount is not the answer to everything.\n\nBy the way, this is a multiline\nerror message!');
+  }
+
   return true;
 }
 
